@@ -44,7 +44,11 @@
       $(".reason").prepend(data.feed.entry[i].gsx$reason.$t);
 
       var audio = new Audio(data.feed.entry[i].gsx$song.$t);
-      audio.play(); // click mute button when setting up.
+
+      setTimeout(function(){
+      audio.play(); }, 10000);
+
+
 
       $(".completed").prepend(title);
 
