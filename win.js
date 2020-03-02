@@ -46,7 +46,7 @@
       var audio = new Audio(data.feed.entry[i].gsx$song.$t);
 
       setTimeout(function(){
-      audio.play(); }, 10000);
+      audio.pause(); }, 10000);
 
 
 
